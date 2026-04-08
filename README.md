@@ -1,7 +1,7 @@
 # vTRACE
 ## Project description
 This repository contains the main analysis notebooks for **vTRACE** (*Viral Trajectory-based Antigenic Representation and Evolutionary Analysis*),  vTRACE is an integrated sequence-to-trajectory framework for analyzing viral evolution in complex adaptive landscapes by coupling AI-based phenotype inference with dynamic evolutionary modeling. It forms an encode–decode pipeline that links sequence variation to population-level evolutionary trajectories through three interconnected modules.
-![scheme](fig/trace_figure1.tif)
+![scheme](figs/trace_figure1.tif)
 **Module I: AI-based phenotypic inference.** Viral RBD sequences are mapped to two key fitness-related phenotypes: antigenic distance, which captures immune escape potential, and ACE2-binding affinity, which serves as a proxy for intrinsic transmissibility. Antigenic distance is inferred by EvoRBD, a fine-tuned protein language model trained on transformed deep mutational scanning data, whereas ACE2-binding affinity is predicted using a transfer-learning model that combines EvoRBD embeddings with ACE2 structural representations.
 
 **Module II: Dynamic fitness landscape reconstruction.** These phenotypes are integrated with genomic surveillance, case proxies, and vaccination history to reconstruct time-dependent viral fitness landscapes. Antigenic distance contributes an immune-selection component shaped by accumulated infection- and vaccine-derived immunity, whereas ACE2-binding affinity contributes an intrinsic transmissibility component. vTRACE models fitness at both the antigenic-cluster level and the individual-sequence level.
