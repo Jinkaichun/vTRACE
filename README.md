@@ -45,31 +45,26 @@ These files are only required for `0_AI_phenotype_inference.ipynb`. This noteboo
 ### File required for downstream analyses
 
 Download:
-`filtered_mutant_ad_mix.parquet` and `filtered_mutant_counts_whole_world_mix.parquet`
 
-and place it in:
+* `filtered_mutant_ad_mix.parquet`
+* `filtered_mutant_counts_whole_world_mix.parquet`
 
-`./data/`
+and place them in:
 
-This file contains the precomputed pairwise antigenic distances used by the downstream notebooks.
+```text
+./data/
+```
+
+`filtered_mutant_ad_mix.parquet` contains the precomputed pairwise antigenic distances, while `filtered_mutant_counts_whole_world_mix.parquet` contains the daily counts of RBD mutants used in the downstream analyses.
+
 
 ## Contents
 
 ### `0_AI_phenotype_inference.ipynb`
 
-If you wish to run the code starting from the phenotype prediction step, you need to download the required model weights from our Hugging Face repository:
-https://huggingface.co/Alannnnnnnnnnn/vTRACE/tree/main  
-Please place the downloaded files into their respective directories within this repository:  
-Place the following files into `./phenotype_inference/model_trained/` directory:
-- `ace2binding_trained.pth`
-- `evoRBD_ba5_trained.pth`
-- `evoRBD_wt_trained.pth`
+Predicts ACE2-binding affinity and pairwise antigenic distances from RBD sequences and evaluates model performance on external validation datasets.
 
-Place the entire saprot_model folder and foldseek into `./phenotype_inference/code/ace2_binding_prediction/configs/' directory.  
-
-After completing the setup above, this notebook can be used to predict ACE2-binding affinity and pairwise antigenic distances from RBD sequences, and to evaluate model performance on external validation datasets.
-
-For convenience, precomputed results for real-world RBD sequences are provided in `./data/`. Pairwise antigenic distances are stored in `filtered_mutant_ad_mix.parquet`, while ACE2-binding predictions are available in `antigenic_adata_clustered.h5ad` under obs['ace2_binding']. Therefore, this notebook can be skipped when running the downstream analyses.
+This notebook requires the model weights and supporting files described above. It can be skipped when running the downstream analyses because precomputed results for the real-world RBD sequences are provided.
 
 ### `1_antigenic_cluster.ipynb`
 
