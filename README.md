@@ -9,6 +9,9 @@ This repository contains the main analysis notebooks for **vTRACE** (*Viral Traj
 **Module III: Trajectory prediction in antigenic space.** Sequence-level fitness is then converted into predicted movement in local antigenic space. At each time point, circulating variants are embedded into a local antigenic space, and their fitness values are aggregated into an **antigenic velocity** that quantifies both the speed and direction of population-level antigenic change. This enables identification of drift versus adaptive phases and provides a basis for predicting short-term antigenic trajectories.
 
 Below are the main analysis notebooks implementing this workflow.
+## Environment Setup
+We provide the `vTRACE` conda environment. You can build it using the following command:
+`conda env create -f environment.yml`
 ## Contents
 
 ### `0_AI_phenotype_inference.ipynb`
