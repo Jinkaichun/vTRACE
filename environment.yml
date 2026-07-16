@@ -100,6 +100,7 @@ dependencies:
       - h5py==3.16.0
       - hf-xet==1.2.0
       - huggingface-hub==0.36.0
+      - pyarrow==25.0.0
       - idna==3.11
       - joblib==1.5.3
       - kiwisolver==1.4.9
