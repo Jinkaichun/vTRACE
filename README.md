@@ -27,7 +27,11 @@ Place the following files into `./phenotype_inference/model_trained/` directory:
 - `evoRBD_ba5_trained.pth`
 - `evoRBD_wt_trained.pth`
 
-Place the entire saprot_model folder into `./phenotype_inference/code/ace2_binding_prediction/configs/' directory.
+Place the entire saprot_model folder into `./phenotype_inference/code/ace2_binding_prediction/configs/' directory.  
+
+After completing the setup above, this notebook can be used to predict ACE2-binding affinity and pairwise antigenic distances from RBD sequences, and to evaluate model performance on external validation datasets.
+
+For convenience, precomputed results for real-world RBD sequences are provided in `./data/`, including the pairwise antigenic-distance file `filtered_mutant_ad_mix.parquet` and ACE2-binding file `XXX`. Therefore, this notebook can be skipped when running the downstream analyses.
 
 ### `1_antigenic_cluster.ipynb`
 
