@@ -12,11 +12,20 @@ Below are the main analysis notebooks implementing this workflow.
 ## Environment Setup
 We provide the `vTRACE` conda environment. You can build it using the following command:
 `conda env create -f environment.yml`
+
+## Downloading Model Weights
+
 ## Contents
 
 ### `0_AI_phenotype_inference.ipynb`
 
-Demonstrates how to use the trained EvoRBD models to infer key viral phenotypes directly from RBD sequences. Given input sequences, this notebook predicts pairwise antigenic distances and ACE2-binding affinity, and also shows model performance on external validation datasets.
+If you wish to run the code starting from the phenotype prediction step, you need to download the required model weights from our Hugging Face repository:
+https://huggingface.co/Alannnnnnnnnnn/vTRACE/tree/main
+Please place the downloaded files into their respective directories within this repository:
+Place the following files into `./phenotype_inference/model_trained/` directory:
+- `ace2binding_trained.pth`
+- `evoRBD_ba5_trained.pth`
+- `evoRBD_wt_trained.pth`
 
 ### `1_antigenic_cluster.ipynb`
 
