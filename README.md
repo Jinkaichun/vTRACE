@@ -12,6 +12,7 @@ Below are the main analysis notebooks implementing this workflow.
 ## Environment Setup
 We provide the `vTRACE` conda environment. You can build it using the following command:
 `conda env create -f environment.yml`
+`conda activate vTRACE`
 
 ## Contents
 
