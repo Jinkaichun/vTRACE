@@ -29,7 +29,7 @@ Place the entire saprot_model folder into `./phenotype_inference/code/ace2_bindi
 
 After completing the setup above, this notebook can be used to predict ACE2-binding affinity and pairwise antigenic distances from RBD sequences, and to evaluate model performance on external validation datasets.
 
-For convenience, precomputed results for real-world RBD sequences are provided in `./data/`. Pairwise antigenic distances are stored in `filtered_mutant_ad_mix.parquet`, while ACE2-binding predictions are available in 'antigenic_adata_clustered.h5ad' under obs['ace2_binding']. Therefore, this notebook can be skipped when running the downstream analyses.
+For convenience, precomputed results for real-world RBD sequences are provided in `./data/`. Pairwise antigenic distances are stored in `filtered_mutant_ad_mix.parquet`, while ACE2-binding predictions are available in `antigenic_adata_clustered.h5ad` under obs['ace2_binding']. Therefore, this notebook can be skipped when running the downstream analyses.
 
 ### `1_antigenic_cluster.ipynb`
 
