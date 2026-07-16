@@ -14,6 +14,65 @@ We provide the `vTRACE` conda environment. You can build it using the following 
 `conda env create -f environment.yml`
 `conda activate vTRACE`
 
+## Downloading model weights and precomputed data
+
+The required files are available from our Hugging Face repository:
+
+https://huggingface.co/Alannnnnnnnnnn/vTRACE/tree/main
+
+### Files required for `0_AI_phenotype_inference.ipynb`
+
+To run the phenotype-inference notebook, download the following model weights and place them in:
+
+```text
+./phenotype_inference/model_trained/
+```
+
+Required files:
+
+* `ace2binding_trained.pth`
+* `evoRBD_ba5_trained.pth`
+* `evoRBD_wt_trained.pth`
+
+Also download the entire `saprot_model` folder and the `foldseek` executable, and place them in:
+
+```text
+./phenotype_inference/code/ace2_binding_prediction/configs/
+```
+
+These files are only required for `0_AI_phenotype_inference.ipynb`. This notebook may be skipped because the precomputed phenotype results used in the downstream analyses are provided separately.
+
+### File required for downstream analyses
+
+Download:
+
+```text
+filtered_mutant_ad_mix.parquet
+```
+```text
+filtered_mutant_counts_whole_world_mix.parquet
+```
+
+and place it in:
+
+```text
+./data/
+```
+
+This file contains the precomputed pairwise antigenic distances used by the downstream notebooks.
+
+Precomputed ACE2-binding predictions are already stored in:
+
+```text
+./data/antigenic_adata_clustered.h5ad
+```
+
+under:
+
+```python
+obs["ace2_binding"]
+```
+
 ## Contents
 
 ### `0_AI_phenotype_inference.ipynb`
