@@ -49,11 +49,7 @@ Download:
 * `filtered_mutant_ad_mix.parquet`
 * `filtered_mutant_counts_whole_world_mix.parquet`
 
-and place them in:
-
-```text
-./data/
-```
+and place them in: `./data/`  
 
 `filtered_mutant_ad_mix.parquet` contains the precomputed pairwise antigenic distances, while `filtered_mutant_counts_whole_world_mix.parquet` contains the daily counts of RBD mutants used in the downstream analyses.
 
