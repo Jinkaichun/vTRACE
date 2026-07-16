@@ -22,7 +22,7 @@ conda activate vTRACE`
 
 The required files are available from our Hugging Face repository:
 
-https://huggingface.co/Alannnnnnnnnnn/vTRACE/tree/main
+https://huggingface.co/LinZhang-PKU/vTRACE/tree/main
 
 ### Files required for `0_AI_phenotype_inference.ipynb`
 
