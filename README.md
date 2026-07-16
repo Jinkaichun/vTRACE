@@ -25,7 +25,7 @@ Place the following files into `./phenotype_inference/model_trained/` directory:
 - `evoRBD_ba5_trained.pth`
 - `evoRBD_wt_trained.pth`
 
-Place the entire saprot_model folder into `./phenotype_inference/code/ace2_binding_prediction/configs/' directory.  
+Place the entire saprot_model folder and foldseek into `./phenotype_inference/code/ace2_binding_prediction/configs/' directory.  
 
 After completing the setup above, this notebook can be used to predict ACE2-binding affinity and pairwise antigenic distances from RBD sequences, and to evaluate model performance on external validation datasets.
 
