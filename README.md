@@ -21,7 +21,7 @@ We provide the `vTRACE` conda environment. You can build it using the following 
 
 If you wish to run the code starting from the phenotype prediction step, you need to download the required model weights from our Hugging Face repository:
 https://huggingface.co/Alannnnnnnnnnn/vTRACE/tree/main  
-Please place the downloaded files into their respective directories within this repository:
+Please place the downloaded files into their respective directories within this repository:  
 Place the following files into `./phenotype_inference/model_trained/` directory:
 - `ace2binding_trained.pth`
 - `evoRBD_ba5_trained.pth`
