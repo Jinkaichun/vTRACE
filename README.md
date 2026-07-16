@@ -25,7 +25,8 @@ Please place the downloaded files into their respective directories within this 
 Place the following files into `./phenotype_inference/model_trained/` directory:
 - `ace2binding_trained.pth`
 - `evoRBD_ba5_trained.pth`
-- `evoRBD_wt_trained.pth`  
+- `evoRBD_wt_trained.pth`
+
 Place the entire saprot_model folder into `./phenotype_inference/code/ace2_binding_prediction/configs/' directory.
 
 ### `1_antigenic_cluster.ipynb`
