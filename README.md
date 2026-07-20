@@ -15,7 +15,7 @@ We provide the `vTRACE` conda environment. You can build it using the following 
 conda env create -f environment.yml
 ```
 ```text
-conda activate vTRACE`
+conda activate vTRACE
 ```
 
 ## Downloading model weights and precomputed data
